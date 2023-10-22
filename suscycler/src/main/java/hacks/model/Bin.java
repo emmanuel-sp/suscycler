@@ -14,13 +14,20 @@ public class Bin {
 
     private int counter;
 
+    private String campus;
+
+    private String building;
+
     public Bin() {
 
     }
 
-    public Bin(Long id, String link) {
+    public Bin(Long id, String link, int counter, String building, String campus) {
         this.id = id;
         this.link = link;
+        this.counter = counter;
+        this.building = building;
+        this.campus = campus;
     }
 
     public String getLink() {
@@ -37,5 +44,13 @@ public class Bin {
 
     public void setCounter(int counter) {
         this.counter = counter;
+    }
+
+    public String getCampus() {
+        return this.campus;
+    }
+
+    public String getBuilding() {
+        return this.building;
     }
 }
